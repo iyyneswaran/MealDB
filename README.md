@@ -45,7 +45,7 @@ These instructions help you set up and run the project locally.
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/iyyneswaran/MealDB.git
    cd your-repo
    ```
 
@@ -83,7 +83,7 @@ These instructions help you set up and run the project locally.
 ├── public/          # Static assets
 ├── src/
 │   ├── components/  # React components
-│   ├── db/          # MeadDB setup and logic
+│   ├── api/          # MeadDB setup and logic
 │   ├── App.jsx      # Main React component
 │   ├── main.jsx     # Entry point
 │   └── index.css    # TailwindCSS styles
