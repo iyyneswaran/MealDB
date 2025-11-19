@@ -1,5 +1,6 @@
 import axios from 'axios';
-const BASE = 'www.themealdb.com/api/json/v1/1/';
+const BASE = 'https://www.themealdb.com/api/json/v1/1';
+
 
 // categories of meals
 export const fetchCategories = () => axios.get(`${BASE}/categories.php`);

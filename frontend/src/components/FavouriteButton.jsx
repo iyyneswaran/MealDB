@@ -1,9 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { IoIosHeartEmpty, IoIosHeart } from "react-icons/io";
 
-const FavouriteButton = () => {
+const FavouriteButton = ({ meal, onToggle, isFav }) => {
   return (
-    <div>FavouriteButton</div>
-  )
-}
+    <button
+      onClick={(e) => {
+        e.preventDefault();
+        onToggle(meal);
+      }}
+      className={`cursor-pointer absolute top-2 right-2 p-2 rounded-full shadow 
+      ${isFav ? 'bg-red-500 text-white' : 'bg-white text-red-600'}`}
+    >
+      {isFav ? <IoIosHeart /> : <IoIosHeartEmpty />}
+    </button>
+  );
+};
 
-export default FavouriteButton
+export default FavouriteButton;
